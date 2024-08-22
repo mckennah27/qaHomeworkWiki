@@ -21,19 +21,19 @@ import { blockBuster } from "./newFunction";
 
 describe('Testing Block Buster', () => {
   it('should return the movie set for MovieOne', () => {
-    expect(blockBuster("Movie One")).toBe("Free Guy"); 
+    expect(blockBuster("Movie One")).toBe("Big Trouble In Little China"); 
   }); 
   it("should return the movie set for movie two", () => {
-    expect(blockBuster('Movie Two')).toBe("Everything, Everywhere, All at Once"); 
+    expect(blockBuster('Movie Two')).toBe("Scream"); 
   }); 
   it("should return the movie set for movie three", () => {
-    expect(blockBuster('Movie Three')).toBe("Surf's Up"); 
+    expect(blockBuster('Movie Three')).toBe("Lost and Found"); 
   }); 
   it("should return the movie set for movie four", () => {
-    expect(blockBuster("Movie Four")).toBe("Lilo and Stitch"); 
+    expect(blockBuster("Movie Four")).toBe("The Truth About Cats and Dogs"); 
   });
   it("should return the movie set for movie five", () => {
-    expect(blockBuster("Movie Five")).toBe("Ex Machina"); 
+    expect(blockBuster("Movie Five")).toBe("Abigail"); 
   }); 
   it("should return the default", () => {
     expect(blockBuster("Fast X")).toBe("I'm sorry we do not carry Fast X"); 

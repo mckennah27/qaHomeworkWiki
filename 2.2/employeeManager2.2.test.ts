@@ -8,22 +8,22 @@ const chromedriver = require("chromedriver");
 
 const driver: WebDriver = new Builder().withCapabilities(Capabilities.chrome()).build();
 
-const bernice: By = By. //! DELETE THE COMMENT & FILL IN THE BLANK
-const marnie: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const phillip: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const nameDisplay: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const nameInput: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const phoneInput: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const titleInput: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const saveButton: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const cancelButton: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
-const errorCard: By = By.//! DELETE THE COMMENT & FILL IN THE BLANK
+const bernice: By = By. //("employee1")
+const marnie: By = By.//("employee2")
+const phillip: By = By.//("employee3")
+const nameDisplay: By = By.//("titleEntry")
+const nameInput: By = By.//("nameEntry")
+const phoneInput: By = By.//("phoneEntry")
+const titleInput: By = By.//("titleEntry")
+const saveButton: By = By.//("saveBtn")
+const cancelButton: By = By.//("nuetralBtn")
+const errorCard: By = By.//("errorCard")
 
 describe("Employee Manager 1.2", () => {
 
-    beforeEach(async () => {
-        await driver.get(
-        "https://devmountain-qa.github.io/employee-manager/1.2_Version/index.html"
+    beforeEach(async () => {t driver.get(
+        "https://devmountain-qa.github.io/employee-manager/1.2_Version/index.html
+        awai"
         );
     });
     afterAll(async () => {
