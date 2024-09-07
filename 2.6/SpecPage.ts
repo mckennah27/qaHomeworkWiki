@@ -39,4 +39,4 @@ export class SpecPage {
         async getText(elementBy: By) {
         await this.driver.wait(until.elementLocated(elementBy))
         return (await this.driver.findElement(elementBy)).getText();
-        
+        }
