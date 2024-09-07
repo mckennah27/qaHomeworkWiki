@@ -55,12 +55,12 @@ async click(elementBy: By) {
     await emPage.navigate();
     await emPage.click(emPage.addEmployee);
     await emPage.click(emPage.addEmployee);
-    await emPage.sendKeys(emPage.nameInput, "bob the builder");
-    await emPage.sendKeys()
-    await emPage.sendKeys
-    await emPage.click
-    await emPage.
+    await emPage.sendKeys(emPage.nameInput, "Bob the Builder");
+    await emPage.sendKeys(emPage.phoneInput,8008008001);
+    await emPage.sendKeys(emPage.titleInput, "CEO");
+    await emPage.click(emPage.saveBtn);
+    await emPage.driver.quit()
 
- })
+ });
 
 
