@@ -7,13 +7,13 @@ class employeeMan {
     driver: WebDriver;
     url: string = 'https://devmountain-qa.github.io/employee-manager/1.2_Version/index.html';
     //locators next
-    header: By = By.css('titleText');
+    header: By = By.css('.titleText');
     addEmployee:By = By.name('addEmployee');
-    new:By = By.name('addEmployee11');
+    new:By = By.name('employee11');
     nameInput:By = By.name('nameEntry');
     phoneInput:By = By.name('phoneEntry');
     titleInput:By = By.name('titleEntry');
-    saveBtn:By = By.name('saveBtn');
+    saveBtn:By = By.id('saveBtn');
     //constructor goes here
     constructor(driver: WebDriver) {
         this.driver = driver;
@@ -59,6 +59,7 @@ async click(elementBy: By) {
     await emPage.sendKeys(emPage.phoneInput,8008008001);
     await emPage.sendKeys(emPage.titleInput, "CEO");
     await emPage.click(emPage.saveBtn);
+    await emPage.driver.sleep(1000)
     await emPage.driver.quit()
 
  });
