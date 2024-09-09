@@ -38,7 +38,7 @@ class Animal {
  * @param {string} food - as expected
  * @param {number} flightSpeed - the flight speed of the bird, in meters/second. This should be 0 for flightless birds.
  */
-class Birds extends Animal {
+class Bird extends Animal {
     flightSpeed: number;
     constructor(name:string, sound:any, food:string, flightSpeed:number,){
         super(name, sound, food);
